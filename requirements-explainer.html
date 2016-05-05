@@ -100,14 +100,22 @@
 
     <p>Ever look at a <code>requirements.txt</code> file for a Python project and wonder what all those
         strangely-named dependencies actually <em>do</em>? Paste the file below and get an explanation from PyPi using its API. You
-        were going to search them all individually anyway.</p>
+        were going to search them all individually anyway. The links are to the relevant PyPi page.</p>
     <p>It's not deeply tested, but it does work for me (except see below).</p>
 
     <p><strong>Note:</strong> I don't know why, but jquery pukes on the HTTP headers returned for some, but only some
-        modules. It's the same ones consistently though. Sorry.</p>
+        modules. It's the same ones consistently though. Sorry. (I think it might be to do with case sensitivity actually - Django, SQLAlchemy and Pillow all 'suffer')</p>
 
     <div id="input">
-        <p><textarea name="requirements" id="requirements" cols="60" rows="10"></textarea></p>
+        <p><textarea name="requirements" id="requirements" cols="60" rows="10">alembic>=0.8.3
+pandas
+beautifulsoup4
+bottle
+kombu
+Pillow
+Twisted
+tqdm
+nose</textarea></p>
         <p><input class="btn btn-success" type="button" id="explain" value="Explain!"></p>
 
     </div>
