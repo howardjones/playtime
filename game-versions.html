@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-4DAPMwiyOJv/C/LvTiUsW5ueiD7EsaAhwUKO0Llp+fWzT40XrmAbayhVP00bAJVa" crossorigin="anonymous">
     <title>Video Game Versions</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Exo:900|Share|Yesteryear" rel="stylesheet">
     <style type="text/css">
-    #result2 {position: relative; display: inline-block; }
-    #base { font-size: 72px; top: 12px;}
-    #prefix {  font-size: 24px; position:absolute; left: 0; top: 0;}
-    #suffix {  font-size: 18px; position:absolute; top: 84px;right: 0;}
+    #result2 {position: relative; display: inline-block; margin: 2em;}
+    #base { font-family: 'Exo'; font-size: 5em; top: 1em; color: white;}
+    #prefix { font-family: 'Yesteryear'; font-size: 1.5em; position:absolute; left: 0; top: 0; color: red;}
+    #suffix { font-family: 'Share'; font-size: 1.25em; position:absolute; top: 4.3em; right: 0; color: gray;}
     </style>
   </head>
   <body>
@@ -91,7 +91,8 @@
                 $('#minor').append($('<option>',{value:i, text:i}));
                 $('#patch').append($('<option>',{value:i, text:i}));
             }
-            
+            $('select').val('2');
+
     
             $('select').on('change', updateVersion);
             $('input').on('keyup', updateVersion);
