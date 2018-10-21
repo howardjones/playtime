@@ -15,6 +15,8 @@
     #base { font-family: 'Exo'; font-size: 5em; top: 1em; color: white;}
     #prefix { font-family: 'Yesteryear'; font-size: 1.5em; position:absolute; left: 0; top: 0; color: red;}
     #suffix { font-family: 'Share'; font-size: 1.25em; position:absolute; top: 4.3em; right: 0; color: gray;}
+
+    #form { color: white;}
     </style>
   </head>
   <body>
@@ -31,11 +33,9 @@
     <p>
 <a>Also available as an <a href="https://www.npmjs.com/package/video-game-versioning">npm package</a>, because why not. (<a href="https://github.com/howardjones/video-game-versioning">github</a>)</p>
 <hr>
-<div>
-    Base name: <input size=10 id="basename" value="DOS" />
-    <select id="major"></select>.
-    <select id="minor"></select>.
-    <select id="patch"></select>
+<div id="form">
+    Base name: <input size=10 id="basename" value="DOS" /> version 
+    <select id="major"></select> &bull; <select id="minor"></select> &bull; <select id="patch"></select>
 
 
 </div>
