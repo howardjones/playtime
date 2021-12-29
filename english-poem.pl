@@ -94,7 +94,7 @@ Job, nob, bosom, transom, oath.
 Though the differences seem little,
 We say actual but victual.
 Refer does not rhyme with deafer.
-Fe0ffer does, and zephyr, heifer.
+Feoffer does, and zephyr, heifer.
 Mint, pint, senate and sedate;
 Dull, bull, and George ate late.
 Scenic, Arabic, Pacific,
